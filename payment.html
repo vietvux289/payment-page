@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Input your card number here!</title>
+    <link href="payment_files/payment.css" type="text/css" rel="stylesheet">
+</head>
+    
+<body>
+    <h1>Using Master or Visa Card instead of cash, Plz!</h1>
+
+    <p>
+        When you buy something from an online store, please use your Master or Visa Card instead of cash. Thank you very much!
+    </p>
+        
+    <hr>
+        
+    <h2>Give Us Your Money</h2>
+    <form action="dopayment.php" method="post">
+        <dl>
+            <dt>Name</dt>
+            <dd>
+                <label for="name">
+                    <input type="text" id="name" name="name">
+                </label>
+            </dd>
+            
+            <dt>Section</dt>
+            <dd>
+                <label for="section">
+                    <select name="section" id="section">
+                        <option value="default">Select a section</option>
+                        <option value="MA">MA</option>
+                        <option value="MB">MB</option>
+                        <option value="MC">MC</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MF">MF</option>
+                        <option value="MG">MG</option>
+                        <option value="MH">MH</option>
+                    </select>
+                </label>
+            </dd>
+            
+            <dt>Credit Card</dt>
+            <dd>
+                <label for="credit">
+                    <input type="text" id="credit" name="credit"><br>
+                    <input type="radio" name="credittype" value="Visa">Visa 
+                    <input type="radio" name="credittype" value="Mastercard">Mastercard
+                </label>
+            </dd>
+        </dl>
+        
+        <div>
+            <input type="submit" value="Give money!" style="width: 100%;"> 
+        </div>
+    </form>
+</body>
+</html>
